@@ -1,11 +1,14 @@
 # Ignore environment variables
 .env
+server/.env
+server/config/config.env
 
 # Ignore log files
 *.log
 
 # Ignore node modules
 node_modules/
+server/node_modules/
 
 # Ignore VS Code settings
 .vscode/
@@ -14,6 +17,6 @@ node_modules/
 .DS_Store
 Thumbs.db
 
-# Ignore build/output folders (if you build your app later)
+# Ignore build/output folders
 dist/
 build/
