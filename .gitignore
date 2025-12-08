@@ -1,0 +1,19 @@
+# Ignore environment variables
+.env
+
+# Ignore log files
+*.log
+
+# Ignore node modules
+node_modules/
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore OS/system files
+.DS_Store
+Thumbs.db
+
+# Ignore build/output folders (if you build your app later)
+dist/
+build/
