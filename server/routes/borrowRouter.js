@@ -5,7 +5,10 @@ import {
   recordBorrowedBook,
   returnBorrowedBooks,
 } from "../controllers/borrowController.js";
-import { isAuthenticated, isAuthorized } from "../middlewares/authMiddleware.js";
+import {
+  isAuthenticated,
+  isAuthorized,
+} from "../middlewares/authMiddleware.js";
 
 const router = express.Router();
 
@@ -22,6 +25,7 @@ router.get(
   getBorrowedBooksForAdmin
 );
 router.get("/my-borrowed-book/", isAuthenticated, borrowedBooks);
+
 router.put(
   "/return-borrowed-book/:bookId",
   isAuthenticated,

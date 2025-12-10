@@ -27,15 +27,15 @@ const borrowSchema = new mongoose.Schema({
             ref:'User',
             required:true
     },
-    borrowData:{
+    borrowDate:{
          type:Date,
         default:Date.now()
     },
-    dueData:{
+    dueDate:{
          type:Date,
        default:null
     },
-    returnData:{
+    returnDate:{
          type:Date,
         default:null
     },

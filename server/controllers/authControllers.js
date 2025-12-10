@@ -183,6 +183,12 @@ export const resetPassword = catchAsyncErrors(async (req, res, next) => {
       )
     );
   }
+  
+  // ADD THESE 4 LINES RIGHT HERE:
+  if (!req.body.password || !req.body.confirmPassword) {
+    return next(new ErrorHandler("Please provide both password and confirm password.", 400));
+  }
+  
   if (req.body.password !== req.body.confirmPassword) {
     return next(
       new ErrorHandler("Password & confirm password do not match.", 400)
