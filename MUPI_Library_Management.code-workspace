@@ -1,0 +1,9 @@
+{
+  "folders": [{ "path": "client" }, { "path": "server" }],
+  "settings": {
+    "javascript.suggest.autoImports": true,
+    "typescript.suggest.autoImports": true,
+   
+    "json.schemas": []
+  }
+}

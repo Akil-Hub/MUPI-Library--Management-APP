@@ -9,6 +9,7 @@ server/config/config.env
 # Ignore node modules
 node_modules/
 server/node_modules/
+client/node_modules
 
 # Ignore VS Code settings
 .vscode/
